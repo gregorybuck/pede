@@ -1,0 +1,262 @@
+#header 
+{
+    padding-top:2px;
+	background-color:rgb(48,44,105);
+	text-align:center;
+}
+
+.headertext
+{
+    font: Garamond,Palatino,Georgia,Arial;
+    font-weight:bold;
+    font-size:xx-large;
+    text-align:center;
+    color:#ffffff;
+    height:100%;
+    padding-bottom:1em;
+    display:inline;
+}
+.imagePatricia
+{
+	display:inline;
+	height:100%;
+}
+
+.imageDon
+{
+	display:inline;
+	height:100%;
+}
+
+.headingDon
+{
+    font-size:large;
+}
+.headingPatricia
+{
+    font-size:large;
+}
+
+.aboutBooksDetail
+{
+    font-size:small;
+    padding:1em 1em 1em 1em;
+    }
+
+.DonDetails
+{
+    font-size:12pt;
+    padding:1em 1em 1em 1em;
+    }
+
+.TriciaDetails
+{
+    font-size:12pt;
+    padding:1em 1em 1em 1em;
+    }
+
+#frmDonAndPatriciaEdgar
+{
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+
+.DividerDiv
+{
+	position:relative;
+	float:left;
+width:100%;
+}
+
+.hrefCustom
+{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.topNav
+{   
+	display:block;
+    font-size:14pt;
+    font-weight:bold;
+    border-top:solid 1px #ffffff;
+    background-color:rgb(48,44,105);
+    text-align:center;
+    padding:10px 0px 10px 0px;
+}
+
+#container 
+{
+    width:90%;
+	margin-right: auto;
+    margin-left: auto;
+	padding: 0px 0px 0px 0px;
+	background-color:White;
+	font-size: 12pt;
+	text-align:center;
+	border-right: solid 1px rgb(48,44,105);
+    background-color:rgb(48,44,105);
+    min-width: 1000px;
+    width:expression(document.body.clientWidth < 1000? "1000px": "90%" );
+
+}
+
+#leftNav 
+{
+	float:left;
+    width:120px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color:#ffffff;
+}
+
+#divmain 
+{
+	padding-top:0.2em;
+	padding-bottom:0.2em;
+	margin-left:122px;
+	padding-right:20px;
+	text-align:left;
+	border-left: solid 1px rgb(48,44,105);
+	background-color:#ffffff;
+    min-height:600px;
+	}
+	
+.aboutHome
+{
+    margin-right:1px;
+    background-color:rgb(128,194,107);
+    text-align:center;
+    display:inline;
+   	padding:10px 5px 10px 5px;
+}
+
+.aboutDon
+{
+    margin-right:1px;
+    background-color:rgb(108,23,48);
+    text-align:center;
+    display:inline;
+   	padding:10px 5px 10px 5px;
+   	color:#ffffff;
+}
+.aboutPatricia
+{
+    margin-right:1px;
+    background-color:rgb(242,182,52);
+    text-align:center;
+    display:inline;
+   	padding:10px 5px 10px 5px;
+  	color:#ffffff;
+}
+.aboutBooks
+{
+    margin-right:1px;
+    background-color:rgb(221,77,32);
+    text-align:center;
+    display:inline;
+   	padding:10px 5px 10px 5px;
+    color:#ffffff;
+}
+.aboutFilm
+{
+    margin-right:1px;
+	background-color:rgb(56,102,30);
+    text-align:center;
+    display:inline;
+   	padding:10px 5px 10px 5px;
+   	color:#ffffff;
+}
+.aboutSelectedArticles
+{
+	margin-right:1px;
+    background-color:rgb(123,72,158);
+    text-align:center;
+    display:inline;
+   	padding:10px 5px 10px 5px;
+    color:#ffffff;
+}
+
+.aboutSelectedSpeeches
+{
+	margin-right:1px;
+    background-color:rgb(222,58,34);
+    text-align:center;
+    display:inline;
+   	padding:10px 5px 10px 5px;
+   	color:#ffffff;
+}
+.aboutContactUs
+{
+    margin-right:1px;
+    background-color:rgb(152,163,18);
+    text-align:center;
+    display:inline;
+   	padding:10px 5px 10px 5px;
+    color:#ffffff;
+}
+
+.aboutNewchild
+{
+    padding:1em 1em 1em 1em;
+    background-color:rgb(48,44,105);
+    margin-top:1px;
+    text-align:center;
+}
+
+.aboutBloodbath
+{
+    padding:1em 1em 1em 1em;
+    background-color:rgb(48,44,105);
+    margin-top:1px;
+    text-align:center;
+
+}
+.aboutWow
+{
+    padding:1em 1em 1em 1em;
+    background-color:rgb(48,44,105);
+    margin-top:1px;
+    text-align:center;
+}
+.aboutPatchwork
+{
+    padding:1em 1em 1em 1em;
+    background-color:rgb(48,44,105);
+    margin-top:1px;
+    text-align:center;
+}
+.aboutMMM
+{
+    padding:1em 1em 1em 1em;
+    background-color:rgb(48,44,105);
+    margin-top:1px;
+    text-align:center;
+}
+
+
+/* HTML TAGS */
+body 
+{
+    margin: 10px;
+    padding: 0;
+    font: Garamond,Palatino,Georgia,Arial;
+    text-align: center;
+    background-color:#ffffff;
+  	min-width: 1024px;
+}
+
+
+#site-subtitle {
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0.2em; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 0.8em; 
+	BACKGROUND: rgb(1,96,124); 
+	PADDING-BOTTOM: 0.3em; 
+	MARGIN: 0px; 
+	COLOR: white; 
+	LINE-HEIGHT: 1em; 
+	PADDING-TOP: 0.3em; 
+	POSITION: relative
+}

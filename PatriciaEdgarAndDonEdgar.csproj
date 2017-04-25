@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2C62C12-6D66-4AED-9334-8BBD50DF9B2A}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PatriciaEdgarAndDonEdgar</RootNamespace>
+    <AssemblyName>PatriciaEdgarAndDonEdgar</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Common\GEOip.cs" />
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
+    <Compile Include="Controllers\BookController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SpeechController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\contactinfo.cs" />
+    <Compile Include="Models\Datahandler.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Datahandler.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Datahandler.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Datahandler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Datahandler.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Datahandler.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Datahandler\DatahandlerContext.cs" />
+    <Compile Include="Models\ipinfo.cs" />
+    <Compile Include="Models\iteminfo.cs" />
+    <Compile Include="Models\usp_VisitLogGet_Result.cs">
+      <DependentUpon>Datahandler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestDatabase.aspx.cs">
+      <DependentUpon>TestDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDatabase.aspx.designer.cs">
+      <DependentUpon>TestDatabase.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Article\01MediaVCAAFinalDraftIntro.html" />
+    <Content Include="Content\Article\02MediaVCAAFinalDraftPartA.html" />
+    <Content Include="Content\Article\05MediaVCAAFinalDraftPartB.html" />
+    <Content Include="Content\Article\ABCHeadedForOblivion.html" />
+    <Content Include="Content\Article\abettermeasure.html" />
+    <Content Include="Content\Article\acma.html" />
+    <Content Include="Content\Article\actfanniversary.html" />
+    <Content Include="Content\Article\advocatingforvictoriaschildren.html" />
+    <Content Include="Content\Article\AEUConference.html" />
+    <Content Include="Content\Article\ageingisatriumph2014.html" />
+    <Content Include="Content\Article\aracy0509.html" />
+    <Content Include="Content\Article\aracy0909.html" />
+    <Content Include="Content\Article\brucegyngell.html" />
+    <Content Include="Content\Article\candemocracysurvivethemedia.html" />
+    <Content Include="Content\Article\challengetostatusquo.html" />
+    <Content Include="Content\Article\childrenofthenewuniverse.html" />
+    <Content Include="Content\Article\childrensmediaincrisis.html" />
+    <Content Include="Content\Article\childrentoprofitcentres.html" />
+    <Content Include="Content\Article\competence.html" />
+    <Content Include="Content\Article\convention.html" />
+    <Content Include="Content\Article\doestelevisionhaveafuture.html" />
+    <Content Include="Content\Article\dporation.html" />
+    <Content Include="Content\Article\earlyyears.html" />
+    <Content Include="Content\Article\esbenstorm.html" />
+    <Content Include="Content\Article\fantasyland.html" />
+    <Content Include="Content\Article\fiftynotthestartofoldage.html" />
+    <Content Include="Content\Article\fiftyshadesofgrey.html" />
+    <Content Include="Content\Article\fis.html" />
+    <Content Include="Content\Article\ftatvthatmighthavebeen.html" />
+    <Content Include="Content\Article\globalisation.html" />
+    <Content Include="Content\Article\goodsexnotthepreserveoftheyoung.html" />
+    <Content Include="Content\Article\govtpolicyolderpeople.html" />
+    <Content Include="Content\Article\greenproject.html" />
+    <Content Include="Content\Article\greyarmydignityandrespect.html" />
+    <Content Include="Content\Article\handleonlife.html" />
+    <Content Include="Content\Article\hazelhawke.html" />
+    <Content Include="Content\Article\hiddentruthsaboutdomesticviolence.html" />
+    <Content Include="Content\Article\howardgardner.html" />
+    <Content Include="Content\Article\images\50shades.jpg" />
+    <Content Include="Content\Article\images\AEUSlide1.JPG" />
+    <Content Include="Content\Article\images\AEUSlide2.JPG" />
+    <Content Include="Content\Article\images\AEUSlide3.JPG" />
+    <Content Include="Content\Article\images\AEUSlide4.JPG" />
+    <Content Include="Content\Article\images\AEUSlide5.JPG" />
+    <Content Include="Content\Article\images\domesticviolence.jpg" />
+    <Content Include="Content\Article\images\govtpolicyolderpeople.jpg" />
+    <Content Include="Content\Article\images\greyarmy.jpg" />
+    <Content Include="Content\Article\images\gsntpoty.jpg" />
+    <Content Include="Content\Article\images\handleonlife.png" />
+    <Content Include="Content\Article\images\img_webbattle.jpg" />
+    <Content Include="Content\Article\images\insteadofblamingoldpeople.jpg" />
+    <Content Include="Content\Article\images\janawendt.jpg" />
+    <Content Include="Content\Article\images\laurieoakes.jpg" />
+    <Content Include="Content\Article\images\londonriots.png" />
+    <Content Include="Content\Article\images\lunch_image001.jpg" />
+    <Content Include="Content\Article\images\lunch_image002.jpg" />
+    <Content Include="Content\Article\images\lunch_image003.jpg" />
+    <Content Include="Content\Article\images\lunch_image004.jpg" />
+    <Content Include="Content\Article\images\memotojoehockey.jpg" />
+    <Content Include="Content\Article\images\monsterormade.png" />
+    <Content Include="Content\Article\images\nomorepoorexcuses.png" />
+    <Content Include="Content\Article\images\oldandinvisible001.jpg" />
+    <Content Include="Content\Article\images\oldandinvisible002.jpg" />
+    <Content Include="Content\Article\images\oldergenpayingitsway.jpg" />
+    <Content Include="Content\Article\images\oldpeopleaburdenonhealthcare.jpg" />
+    <Content Include="Content\Article\images\ratedgforgarbage.jpg" />
+    <Content Include="Content\Article\images\theking.png" />
+    <Content Include="Content\Article\images\wakadoo.png" />
+    <Content Include="Content\Article\images\wiggles.jpg" />
+    <Content Include="Content\Article\insteadofblamingoldpeople.html" />
+    <Content Include="Content\Article\internationalvolunteering.html" />
+    <Content Include="Content\Article\juliagillard.html" />
+    <Content Include="Content\Article\littleconsumers.html" />
+    <Content Include="Content\Article\lovingandworking.html" />
+    <Content Include="Content\Article\lunchwithpedgar.html" />
+    <Content Include="Content\Article\marketingtochildren.html" />
+    <Content Include="Content\Article\MarriageFamilyAndTheMedia.html" />
+    <Content Include="Content\Article\meaning.html" />
+    <Content Include="Content\Article\mediaandchildren2014.html" />
+    <Content Include="Content\Article\memotojoehockey.html" />
+    <Content Include="Content\Article\moderntechnologyandchildhood.html" />
+    <Content Include="Content\Article\monsterormade.html" />
+    <Content Include="Content\Article\navigatingacomplexdigitalworld.html" />
+    <Content Include="Content\Article\newsasentertainment2013.html" />
+    <Content Include="Content\Article\newvoice.html" />
+    <Content Include="Content\Article\nomorepoorexcuses.html" />
+    <Content Include="Content\Article\obesity.html" />
+    <Content Include="Content\Article\oldandinvisible.html" />
+    <Content Include="Content\Article\oldergenerationmorethanpayingitsway.html" />
+    <Content Include="Content\Article\oldpeopleaburdenonhealthcare.html" />
+    <Content Include="Content\Article\onlineopinion2012.html" />
+    <Content Include="Content\Article\onlineopiniontheABC.html" />
+    <Content Include="Content\Article\positiveageing.html" />
+    <Content Include="Content\Article\pse.html" />
+    <Content Include="Content\Article\ratedgforgarbage.html" />
+    <Content Include="Content\Article\seizethedaymildurauniversity.html" />
+    <Content Include="Content\Article\shinedtta.html" />
+    <Content Include="Content\Article\shinegig.html" />
+    <Content Include="Content\Article\shineissue6.html" />
+    <Content Include="Content\Article\shineissue7.html" />
+    <Content Include="Content\Article\shineissue8.html" />
+    <Content Include="Content\Article\shineissue9.html" />
+    <Content Include="Content\Article\shinetioa.html" />
+    <Content Include="Content\Article\shinewicbt.html" />
+    <Content Include="Content\Article\shinewsw.html" />
+    <Content Include="Content\Article\socialtrends.html" />
+    <Content Include="Content\Article\spidermanisback.html" />
+    <Content Include="Content\Article\streamingwritingarithmetic.html" />
+    <Content Include="Content\Article\thecasefordecency.html" />
+    <Content Include="Content\Article\thehousingchallenge.html" />
+    <Content Include="Content\Article\thekingsspeech.html" />
+    <Content Include="Content\Article\thepassingofanaustralianicon.html" />
+    <Content Include="Content\Article\threattodemocracywithanobbledABC.html" />
+    <Content Include="Content\Article\tomorrowpeople.html" />
+    <Content Include="Content\Article\towatchornottowatch.html" />
+    <Content Include="Content\Article\wakadoo.html" />
+    <Content Include="Content\Article\webbattle.html" />
+    <Content Include="Content\Article\whowantstogetmarried.html" />
+    <Content Include="Content\Book\bloodbath.html" />
+    <Content Include="Content\Book\menmateshipmarriage.html" />
+    <Content Include="Content\Book\moreaboutchildren.html" />
+    <Content Include="Content\Book\thenewchild.html" />
+    <Content Include="Content\Book\thenewchildtomorrowpeople.html" />
+    <Content Include="Content\Book\thepatchworknation.html" />
+    <Content Include="Content\Book\waroverwork.html" />
+    <Content Include="Content\css\styles.css" />
+    <Content Include="Content\error\errMsg.html" />
+    <Content Include="Content\images\bloodbath.jpg" />
+    <Content Include="Content\images\burgundy colourway.jpg" />
+    <Content Include="Content\images\don grey.jpg" />
+    <Content Include="Content\images\greyarmy.jpg" />
+    <Content Include="Content\images\header.jpg" />
+    <Content Include="Content\images\headernotype.jpg" />
+    <Content Include="Content\images\img_australianeighbours.jpg" />
+    <Content Include="Content\images\img_bloodbath.jpg" />
+    <Content Include="Content\images\img_childpoverty.jpg" />
+    <Content Include="Content\images\img_communicationpolicy.jpg" />
+    <Content Include="Content\images\img_don.jpg" />
+    <Content Include="Content\images\img_fairybook_500.jpg" />
+    <Content Include="Content\images\img_header.jpg" />
+    <Content Include="Content\images\img_headernotype.jpg" />
+    <Content Include="Content\images\img_inpraiseofageing.jpg" />
+    <Content Include="Content\images\img_inpraiseofageing_500.jpg" />
+    <Content Include="Content\images\img_introductionaust.jpg" />
+    <Content Include="Content\images\img_janetholmesacourt.JPG" />
+    <Content Include="Content\images\img_mediashe.jpg" />
+    <Content Include="Content\images\img_menmateshipmarriage.jpg" />
+    <Content Include="Content\images\img_mupblackletters.jpg" />
+    <Content Include="Content\images\img_pdf.jpg" />
+    <Content Include="Content\images\img_politicsofpress.jpg" />
+    <Content Include="Content\images\img_porkies_500.jpg" />
+    <Content Include="Content\images\img_ppt.jpg" />
+    <Content Include="Content\images\img_screenviolence.jpg" />
+    <Content Include="Content\images\img_seennotheard.jpg" />
+    <Content Include="Content\images\img_socialchange.jpg" />
+    <Content Include="Content\images\img_sociology.jpg" />
+    <Content Include="Content\images\img_thecompetentteacher.jpg" />
+    <Content Include="Content\images\img_thenewchild.jpg" />
+    <Content Include="Content\images\img_thenewchildback_500.jpg" />
+    <Content Include="Content\images\img_thenewchild_500.jpg" />
+    <Content Include="Content\images\img_thenewsinfocus.jpg" />
+    <Content Include="Content\images\img_thepatchworknation.jpg" />
+    <Content Include="Content\images\img_toomuchchange.jpg" />
+    <Content Include="Content\images\img_topnav.jpg" />
+    <Content Include="Content\images\img_tricia.jpg" />
+    <Content Include="Content\images\img_tricia_new.jpg" />
+    <Content Include="Content\images\img_underfive.jpg" />
+    <Content Include="Content\images\img_waroverwork.jpg" />
+    <Content Include="Content\images\img_word.jpg" />
+    <Content Include="Content\images\img_WS_stillbanner.jpg" />
+    <Content Include="Content\images\janetholmesacourt.JPG" />
+    <Content Include="Content\images\kl.png" />
+    <Content Include="Content\images\mupblackletters.jpg" />
+    <Content Include="Content\images\navy colourway.jpg" />
+    <Content Include="Content\images\sa_wellbeing.jpg" />
+    <Content Include="Content\images\sidhuvud-mitten.jpg" />
+    <Content Include="Content\images\thenewchild.jpg" />
+    <Content Include="Content\images\topnav.jpg" />
+    <Content Include="Content\images\tricia grey.jpg" />
+    <Content Include="Content\images\waroverwork.jpg" />
+    <Content Include="Content\images\wsmc.png" />
+    <Content Include="Content\images\wsmc2017.png" />
+    <Content Include="Content\images\wsmcKL.png" />
+    <Content Include="Content\images\wsmcKLall.png" />
+    <Content Include="Content\Page\aboutdon.html" />
+    <Content Include="Content\Page\aboutpatricia.html" />
+    <Content Include="Content\Page\books.html" />
+    <Content Include="Content\Page\contactus.html" />
+    <Content Include="Content\Page\filmawards.html" />
+    <Content Include="Content\Page\selectedarticles.html" />
+    <Content Include="Content\Page\selectedspeeches.html" />
+    <Content Include="Content\Speech\addresstothe5WS.html" />
+    <Content Include="Content\Speech\childrenstelevisionRPF.html" />
+    <Content Include="Content\Speech\meaningofasummit.html" />
+    <Content Include="Content\Speech\mrmildura.html" />
+    <Content Include="Content\Speech\newsprogramsforchildren.html" />
+    <Content Include="Content\Speech\openingKarlstadSummit.html" />
+    <Content Include="Content\Speech\oursocialresponsibility.html" />
+    <Content Include="Content\Speech\schoolinthemediaage.html" />
+    <Content Include="Content\Speech\violenceandutopia.html" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Article\pdf\BCNAArticle.pdf" />
+    <Content Include="Content\Article\pdf\Bloodbath.pdf" />
+    <Content Include="Content\Article\pdf\shineIssue1_WhyStorytellingWorks.pdf" />
+    <Content Include="Content\Article\pdf\shineIssue2Television.pdf" />
+    <Content Include="Content\Article\pdf\shineIssue3_ DefiningAustralian.pdf" />
+    <Content Include="Content\Article\pdf\shineIssue4_WhyIntelligence.pdf" />
+    <Content Include="Content\Article\pdf\shineIssue5gamingisgood.pdf" />
+    <Content Include="Content\Article\pdf\shine_issue6.pdf" />
+    <Content Include="Content\Article\pdf\shine_issue7.pdf" />
+    <Content Include="Content\Article\pdf\shine_issue8.pdf" />
+    <Content Include="Content\Article\pdf\shine_issue9.pdf" />
+    <Content Include="Content\Article\pdf\spasmodicdysphonia.pdf" />
+    <Content Include="Content\Article\pdf\starwarsandaustraliassecrets.pdf" />
+    <Content Include="Content\Article\pdf\TheNewChild.pdf" />
+    <Content Include="Content\Article\pdf\WeekendAustralian.pdf" />
+    <Content Include="Content\Article\pdf\WS_folder.pdf" />
+    <Content Include="Content\Article\ppt\Livingandlovinginachangingworld.pptx" />
+    <Content Include="Content\Book\pdf\Bloodbath.pdf" />
+    <Content Include="Content\Book\pdf\cat_edgar.pdf" />
+    <Content Include="Content\Book\pdf\oldandinvisible.pdf" />
+    <Content Include="Content\Book\pdf\TheNewChild.pdf" />
+    <EntityDeploy Include="Models\Datahandler.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Datahandler.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Datahandler.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Datahandler.edmx</DependentUpon>
+      <LastGenOutput>Datahandler.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Datahandler.edmx.diagram">
+      <DependentUpon>Datahandler.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Datahandler.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Datahandler.edmx</DependentUpon>
+      <LastGenOutput>Datahandler.cs</LastGenOutput>
+    </Content>
+    <Content Include="Content\Article\pdf\Address.to.DHHS.Forum.November.19th.Patricia.Edgar.pdf" />
+    <None Include="Properties\PublishProfiles\PatriciaEdgarAndDonEdgar.pubxml" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.2.0.debug.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="TestDatabase.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\LeftMenu.cshtml" />
+    <Content Include="Views\Shared\MainMenu.cshtml" />
+    <Content Include="Views\Shared\ShowArticle.cshtml" />
+    <Content Include="Views\Shared\ShowItem.cshtml" />
+    <Content Include="Views\Shared\ContactUs.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>36785</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:33096/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

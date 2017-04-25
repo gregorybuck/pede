@@ -1,0 +1,58 @@
+﻿
+@model PatriciaEdgarAndDonEdgar.Models.contactinfo
+
+@{
+    ViewBag.Title = "Patricia Edgar and Don Edgar";
+}
+
+ <div id="divmain">
+    <div class="DonDetails">
+        <!-- start detailContactUs -->
+        <div class="aboutContactUs" style="font-weight:bold;width:100%;">
+            Contact Us
+        </div>
+        <br />
+        <br />
+        <p>Feel free to contact us for speaking invitations, with your comments or questions, or for complete versions of any of our papers. We will do our best (within time constraints) to reply.</p>
+        
+        @using(@Html.BeginForm())
+        {
+            if (Model.sendstatus != "OK")
+            {
+                <div>
+                    <p><b>Your Name</b><br />
+                        @Html.TextBoxFor(model => model.contactName, htmlAttributes: new { @size="60" })
+                        <span style="color:red; font-size:x-small;"><br />@Html.ValidationMessageFor(m => m.contactName)</span>
+                    </p>
+                    <p><b>Your Email Address</b><br />
+                        @Html.TextBoxFor(model => model.Email, htmlAttributes: new { @size="60" })
+                        <span style="color:red; font-size:x-small;"><br />@Html.ValidationMessageFor(m => m.Email)</span>
+                    </p>
+                    <p><b>Retype Your Email Address</b><br />
+                        @Html.TextBoxFor(model => model.EmailVerify, htmlAttributes: new { @size="60" })
+                    </p>
+                    <p><b>Subject</b><br />
+                        @Html.TextBoxFor(model => model.subject, htmlAttributes: new { @size="100" })
+                        <span style="color:red; font-size:x-small;"><br />@Html.ValidationMessageFor(m => m.subject)</span>
+                    </p>
+                    <p><b>Your Message</b><br />
+                        @Html.TextAreaFor(model => model.message, htmlAttributes: new { @rows="10", @cols="100" })
+                        <span style="color:red; font-size:x-small;"><br />@Html.ValidationMessageFor(m => m.message)</span>
+                    </p>
+                    <p>
+                        <input class="aboutContactUs" style="font-weight:bold" type="submit" value="Send Message" />
+                    </p>
+                </div>
+            }
+            if (Model.sendstatus != "OK")
+            {
+                <p><b><span style="font-size:small; color:red;">@Html.Raw(@Model.sendstatusmessage)</span></b></p>
+            }
+            else
+            {
+                <p><b><span style="font-size:small; color:green;">@Html.Raw(@Model.sendstatusmessage)</span></b></p>
+            }
+        }
+        <p>&nbsp;</p>
+    </div>
+</div><!-- end divmain -->

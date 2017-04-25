@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="dbPDEdgarModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="dbPDEdgarModelStoreContainer" />
+        <Function Name="usp_VisitLogGet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="VisitLogID" Type="int" Mode="In" />
+          <Parameter Name="IP" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_VisitLogSet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PageVisited" Type="varchar" Mode="In" />
+          <Parameter Name="IP" Type="varchar" Mode="In" />
+          <Parameter Name="Country" Type="varchar" Mode="In" />
+          <Parameter Name="Region" Type="varchar" Mode="In" />
+          <Parameter Name="City" Type="varchar" Mode="In" />
+          <Parameter Name="Zip" Type="varchar" Mode="In" />
+          <Parameter Name="LatLong" Type="varchar" Mode="In" />
+        </Function>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbPDEdgarModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="dbDatahandlerEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="usp_VisitLogGet" ReturnType="Collection(dbPDEdgarModel.usp_VisitLogGet_Result)">
+            <Parameter Name="VisitLogID" Mode="In" Type="Int32" />
+            <Parameter Name="IP" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_VisitLogSet" ReturnType="Collection(Int32)">
+            <Parameter Name="PageVisited" Mode="In" Type="String" />
+            <Parameter Name="IP" Mode="In" Type="String" />
+            <Parameter Name="Country" Mode="In" Type="String" />
+            <Parameter Name="Region" Mode="In" Type="String" />
+            <Parameter Name="City" Mode="In" Type="String" />
+            <Parameter Name="Zip" Mode="In" Type="String" />
+            <Parameter Name="LatLong" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="usp_VisitLogGet_Result">
+          <Property Type="Int32" Name="VisitLogID" Nullable="false" />
+          <Property Type="String" Name="PageVisited" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="IP" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="Country" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="Region" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="City" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="Zip" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="LatLong" Nullable="true" MaxLength="255" />
+          <Property Type="DateTime" Name="DateModify" Nullable="false" Precision="23" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbPDEdgarModelStoreContainer" CdmEntityContainer="dbDatahandlerEntities" >
+          <FunctionImportMapping FunctionImportName="usp_VisitLogGet" FunctionName="dbPDEdgarModel.Store.usp_VisitLogGet">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="dbPDEdgarModel.usp_VisitLogGet_Result">
+                <ScalarProperty Name="VisitLogID" ColumnName="VisitLogID" />
+                <ScalarProperty Name="PageVisited" ColumnName="PageVisited" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="LatLong" ColumnName="LatLong" />
+                <ScalarProperty Name="DateModify" ColumnName="DateModify" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_VisitLogSet" FunctionName="dbPDEdgarModel.Store.usp_VisitLogSet" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
