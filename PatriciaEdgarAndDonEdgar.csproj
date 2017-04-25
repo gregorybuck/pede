@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -284,6 +285,7 @@
     <Content Include="Content\Article\streamingwritingarithmetic.html" />
     <Content Include="Content\Article\thecasefordecency.html" />
     <Content Include="Content\Article\thehousingchallenge.html" />
+    <Content Include="Content\Article\theimportanceofracialdiversityonourscreens.html" />
     <Content Include="Content\Article\thekingsspeech.html" />
     <Content Include="Content\Article\thepassingofanaustralianicon.html" />
     <Content Include="Content\Article\threattodemocracywithanobbledABC.html" />
@@ -323,6 +325,7 @@
     <Content Include="Content\images\img_menmateshipmarriage.jpg" />
     <Content Include="Content\images\img_mupblackletters.jpg" />
     <Content Include="Content\images\img_pdf.jpg" />
+    <Content Include="Content\images\img_peak250.jpg" />
     <Content Include="Content\images\img_politicsofpress.jpg" />
     <Content Include="Content\images\img_porkies_500.jpg" />
     <Content Include="Content\images\img_ppt.jpg" />
