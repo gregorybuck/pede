@@ -17,7 +17,14 @@ namespace PatriciaEdgarAndDonEdgar.Controllers
             
             if (page == null) page = "Home";
 
-            PatriciaEdgarAndDonEdgar.Common.Datahandler.logVisit(page, Request.ServerVariables["REMOTE_ADDR"].ToString(), null, null, null, null, null);
+            try
+            {
+                PatriciaEdgarAndDonEdgar.Common.Datahandler.logVisit(page, Request.ServerVariables["REMOTE_ADDR"].ToString(), null, null, null, null, null);
+            }
+            catch
+            {
+                // could log error:  if page takes too long to load, most likely this
+            }
           
             if (page.ToLower() == "home")
             {
