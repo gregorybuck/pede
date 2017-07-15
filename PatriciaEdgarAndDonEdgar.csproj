@@ -472,6 +472,7 @@
       <LastGenOutput>Datahandler.cs</LastGenOutput>
     </Content>
     <Content Include="Content\Article\pdf\Address.to.DHHS.Forum.November.19th.Patricia.Edgar.pdf" />
+    <Content Include="Content\Article\pdf\WhatReallyHappenedToAustralianChildrenJuly142017.pdf" />
     <None Include="Properties\PublishProfiles\PatriciaEdgarAndDonEdgar.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
