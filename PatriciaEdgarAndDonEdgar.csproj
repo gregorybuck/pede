@@ -191,6 +191,7 @@
     <Content Include="Content\Article\candemocracysurvivethemedia.html" />
     <Content Include="Content\Article\challengetostatusquo.html" />
     <Content Include="Content\Article\childrenofthenewuniverse.html" />
+    <Content Include="Content\Article\childrenscontentquotas.html" />
     <Content Include="Content\Article\childrensmediaincrisis.html" />
     <Content Include="Content\Article\childrentoprofitcentres.html" />
     <Content Include="Content\Article\competence.html" />
@@ -292,6 +293,7 @@
     <Content Include="Content\Article\threattodemocracywithanobbledABC.html" />
     <Content Include="Content\Article\tomorrowpeople.html" />
     <Content Include="Content\Article\towatchornottowatch.html" />
+    <Content Include="Content\Article\tvnetworksfightthesamefight.html" />
     <Content Include="Content\Article\wakadoo.html" />
     <Content Include="Content\Article\webbattle.html" />
     <Content Include="Content\Article\whowantstogetmarried.html" />
@@ -344,6 +346,7 @@
     <Content Include="Content\images\img_topnav.jpg" />
     <Content Include="Content\images\img_tricia.jpg" />
     <Content Include="Content\images\img_tricia_new.jpg" />
+    <Content Include="Content\images\img_tvnetworksfightthesamefight.jpg" />
     <Content Include="Content\images\img_underfive.jpg" />
     <Content Include="Content\images\img_waroverwork.jpg" />
     <Content Include="Content\images\img_word.jpg" />
