@@ -194,6 +194,7 @@
     <Content Include="Content\Article\childrenscontentquotas.html" />
     <Content Include="Content\Article\childrensmediaincrisis.html" />
     <Content Include="Content\Article\childrentoprofitcentres.html" />
+    <Content Include="Content\Article\clubTroppo.html" />
     <Content Include="Content\Article\competence.html" />
     <Content Include="Content\Article\convention.html" />
     <Content Include="Content\Article\doestelevisionhaveafuture.html" />
