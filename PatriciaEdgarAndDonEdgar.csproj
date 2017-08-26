@@ -194,7 +194,7 @@
     <Content Include="Content\Article\childrenscontentquotas.html" />
     <Content Include="Content\Article\childrensmediaincrisis.html" />
     <Content Include="Content\Article\childrentoprofitcentres.html" />
-    <Content Include="Content\Article\clubTroppo.html" />
+    <Content Include="Content\Article\clubtroppo.html" />
     <Content Include="Content\Article\competence.html" />
     <Content Include="Content\Article\convention.html" />
     <Content Include="Content\Article\doestelevisionhaveafuture.html" />
@@ -222,6 +222,7 @@
     <Content Include="Content\Article\images\AEUSlide4.JPG" />
     <Content Include="Content\Article\images\AEUSlide5.JPG" />
     <Content Include="Content\Article\images\clubTroppo.jpg" />
+    <Content Include="Content\Article\images\clubTroppo_2.jpg" />
     <Content Include="Content\Article\images\domesticviolence.jpg" />
     <Content Include="Content\Article\images\govtpolicyolderpeople.jpg" />
     <Content Include="Content\Article\images\greyarmy.jpg" />
@@ -287,6 +288,7 @@
     <Content Include="Content\Article\socialtrends.html" />
     <Content Include="Content\Article\spidermanisback.html" />
     <Content Include="Content\Article\streamingwritingarithmetic.html" />
+    <Content Include="Content\Article\clubtroppopt2.html" />
     <Content Include="Content\Article\thecasefordecency.html" />
     <Content Include="Content\Article\thehousingchallenge.html" />
     <Content Include="Content\Article\theimportanceofracialdiversityonourscreens.html" />
