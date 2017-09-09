@@ -214,6 +214,7 @@
     <Content Include="Content\Article\handleonlife.html" />
     <Content Include="Content\Article\hazelhawke.html" />
     <Content Include="Content\Article\hiddentruthsaboutdomesticviolence.html" />
+    <Content Include="Content\Article\highereducationbenefitsall.html" />
     <Content Include="Content\Article\howardgardner.html" />
     <Content Include="Content\Article\images\50shades.jpg" />
     <Content Include="Content\Article\images\AEUSlide1.JPG" />
@@ -228,6 +229,8 @@
     <Content Include="Content\Article\images\greyarmy.jpg" />
     <Content Include="Content\Article\images\gsntpoty.jpg" />
     <Content Include="Content\Article\images\handleonlife.png" />
+    <Content Include="Content\Article\images\highereducation.jpg" />
+    <Content Include="Content\Article\images\imagelatestACMAResearch.jpg" />
     <Content Include="Content\Article\images\img_webbattle.jpg" />
     <Content Include="Content\Article\images\insteadofblamingoldpeople.jpg" />
     <Content Include="Content\Article\images\janawendt.jpg" />
@@ -251,6 +254,7 @@
     <Content Include="Content\Article\insteadofblamingoldpeople.html" />
     <Content Include="Content\Article\internationalvolunteering.html" />
     <Content Include="Content\Article\juliagillard.html" />
+    <Content Include="Content\Article\latestACMAresearchonkids.html" />
     <Content Include="Content\Article\littleconsumers.html" />
     <Content Include="Content\Article\lovingandworking.html" />
     <Content Include="Content\Article\lunchwithpedgar.html" />
@@ -481,6 +485,7 @@
     </Content>
     <Content Include="Content\Article\pdf\Address.to.DHHS.Forum.November.19th.Patricia.Edgar.pdf" />
     <Content Include="Content\Article\pdf\WhatReallyHappenedToAustralianChildrenJuly142017.pdf" />
+    <Content Include="Content\Article\pdf\the_new_middle_age_20170902.pdf" />
     <None Include="Properties\PublishProfiles\PatriciaEdgarAndDonEdgar.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
