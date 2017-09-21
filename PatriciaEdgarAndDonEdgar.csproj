@@ -249,6 +249,7 @@
     <Content Include="Content\Article\images\oldpeopleaburdenonhealthcare.jpg" />
     <Content Include="Content\Article\images\ratedgforgarbage.jpg" />
     <Content Include="Content\Article\images\theking.png" />
+    <Content Include="Content\Article\images\TVExpertACMAimage001.jpg" />
     <Content Include="Content\Article\images\wakadoo.png" />
     <Content Include="Content\Article\images\wiggles.jpg" />
     <Content Include="Content\Article\insteadofblamingoldpeople.html" />
@@ -301,6 +302,7 @@
     <Content Include="Content\Article\threattodemocracywithanobbledABC.html" />
     <Content Include="Content\Article\tomorrowpeople.html" />
     <Content Include="Content\Article\towatchornottowatch.html" />
+    <Content Include="Content\Article\TVexpertEdgarslamsappallingACMAresearch.html" />
     <Content Include="Content\Article\tvnetworksfightthesamefight.html" />
     <Content Include="Content\Article\wakadoo.html" />
     <Content Include="Content\Article\webbattle.html" />
@@ -484,8 +486,9 @@
       <LastGenOutput>Datahandler.cs</LastGenOutput>
     </Content>
     <Content Include="Content\Article\pdf\Address.to.DHHS.Forum.November.19th.Patricia.Edgar.pdf" />
-    <Content Include="Content\Article\pdf\WhatReallyHappenedToAustralianChildrenJuly142017.pdf" />
     <Content Include="Content\Article\pdf\the_new_middle_age_20170902.pdf" />
+    <Content Include="Content\Article\pdf\NARI_MV057TheNewMiddleAge-A416pg_V2.pdf" />
+    <Content Include="Content\Article\pdf\FamilyImpactStatementOnWorkChoices_2005.pdf" />
     <None Include="Properties\PublishProfiles\PatriciaEdgarAndDonEdgar.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
