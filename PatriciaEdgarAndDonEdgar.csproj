@@ -489,6 +489,7 @@
     <Content Include="Content\Article\pdf\the_new_middle_age_20170902.pdf" />
     <Content Include="Content\Article\pdf\NARI_MV057TheNewMiddleAge-A416pg_V2.pdf" />
     <Content Include="Content\Article\pdf\FamilyImpactStatementOnWorkChoices_2005.pdf" />
+    <Content Include="Content\Article\pdf\WhatReallyHappenedToAustralianChildrenJuly142017.pdf" />
     <None Include="Properties\PublishProfiles\PatriciaEdgarAndDonEdgar.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
