@@ -184,6 +184,7 @@
     <Content Include="Content\Article\actfanniversary.html" />
     <Content Include="Content\Article\advocatingforvictoriaschildren.html" />
     <Content Include="Content\Article\AEUConference.html" />
+    <Content Include="Content\Article\agedcaredifferentballgame.html" />
     <Content Include="Content\Article\ageingisatriumph2014.html" />
     <Content Include="Content\Article\aracy0509.html" />
     <Content Include="Content\Article\aracy0909.html" />
@@ -194,7 +195,8 @@
     <Content Include="Content\Article\childrenscontentquotas.html" />
     <Content Include="Content\Article\childrensmediaincrisis.html" />
     <Content Include="Content\Article\childrentoprofitcentres.html" />
-    <Content Include="Content\Article\clubtroppo.html" />
+    <Content Include="Content\Article\clubtroppopt1.html" />
+    <Content Include="Content\Article\clubtroppopt3.html" />
     <Content Include="Content\Article\competence.html" />
     <Content Include="Content\Article\convention.html" />
     <Content Include="Content\Article\doestelevisionhaveafuture.html" />
@@ -222,14 +224,15 @@
     <Content Include="Content\Article\images\AEUSlide3.JPG" />
     <Content Include="Content\Article\images\AEUSlide4.JPG" />
     <Content Include="Content\Article\images\AEUSlide5.JPG" />
-    <Content Include="Content\Article\images\clubTroppo.jpg" />
-    <Content Include="Content\Article\images\clubTroppo_2.jpg" />
+    <Content Include="Content\Article\images\clubtroppopt1.jpg" />
+    <Content Include="Content\Article\images\clubtroppopt2.jpg" />
     <Content Include="Content\Article\images\domesticviolence.jpg" />
     <Content Include="Content\Article\images\govtpolicyolderpeople.jpg" />
     <Content Include="Content\Article\images\greyarmy.jpg" />
     <Content Include="Content\Article\images\gsntpoty.jpg" />
     <Content Include="Content\Article\images\handleonlife.png" />
     <Content Include="Content\Article\images\highereducation.jpg" />
+    <Content Include="Content\Article\images\clubtroppopt3.jpg" />
     <Content Include="Content\Article\images\imagelatestACMAResearch.jpg" />
     <Content Include="Content\Article\images\img_webbattle.jpg" />
     <Content Include="Content\Article\images\insteadofblamingoldpeople.jpg" />
