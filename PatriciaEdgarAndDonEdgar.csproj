@@ -196,7 +196,12 @@
     <Content Include="Content\Article\childrensmediaincrisis.html" />
     <Content Include="Content\Article\childrentoprofitcentres.html" />
     <Content Include="Content\Article\clubtroppopt1.html" />
-    <Content Include="Content\Article\clubtroppopt3.html" />
+    <Content Include="Content\Article\healthandwellbeing.html" />
+    <Content Include="Content\Article\images\whatarechildrensprogramspt1.gif" />
+    <Content Include="Content\Article\images\whatarechildrensprogramspt2.jpg" />
+    <Content Include="Content\Article\whatarechildrensprogramspt1.html" />
+    <Content Include="Content\Article\whatarechildrensprogramspt2.html" />
+    <Content Include="Content\Article\whatarechildrensprogramspt3.html" />
     <Content Include="Content\Article\competence.html" />
     <Content Include="Content\Article\convention.html" />
     <Content Include="Content\Article\doestelevisionhaveafuture.html" />
