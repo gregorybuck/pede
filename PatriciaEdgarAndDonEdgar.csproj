@@ -477,6 +477,7 @@
     <Content Include="Content\Book\pdf\cat_edgar.pdf" />
     <Content Include="Content\Book\pdf\oldandinvisible.pdf" />
     <Content Include="Content\Book\pdf\TheNewChild.pdf" />
+    <Content Include="Web.config" />
     <EntityDeploy Include="Models\Datahandler.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Datahandler.Designer.cs</LastGenOutput>
@@ -517,13 +518,6 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="TestDatabase.aspx" />
-    <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
@@ -534,6 +528,12 @@
     <Content Include="Views\Shared\ShowArticle.cshtml" />
     <Content Include="Views\Shared\ShowItem.cshtml" />
     <Content Include="Views\Shared\ContactUs.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
